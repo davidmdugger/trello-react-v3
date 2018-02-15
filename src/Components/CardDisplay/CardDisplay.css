@@ -1,0 +1,6 @@
+.CardDisplay {
+  background-color: #ccc;
+  width: 67%;
+  min-height: 200px;
+  display: inline-block;
+}

@@ -1,0 +1,54 @@
+.Card{
+  display: inline-block;
+  margin: 15px;
+  padding: 5px;
+  background-color: #aaa;
+  width: 250px;
+  height: 150px;
+  overflow: scroll;
+}
+
+.CardTitle{
+  position: relative;
+  color: #fff;
+}
+
+.CardDescription{
+  color: #e6e6e6;
+}
+
+/*
+  "X" for deleting a card
+  positioned to the right of each card
+ */
+.tooltip{
+  right: 3px;
+  border-radius: 50%;
+  color: #ff0000;
+  float: right;
+}
+
+/*
+  Text that is presented for the tooltip
+  initially set to hidden until a user hovers
+  over the "x" delete button
+ */
+.tooltipText{
+  position: relative;
+  float: left;
+  right: 5px;
+  z-index: 1000;
+  display: none;
+  background-color: #242424;
+  color: #fff;
+  padding: 3px;
+  font-size: 10px;
+  border-radius: 5px;
+}
+
+/*
+  Display the text once user hovers over x button
+ */
+.tooltip:hover .tooltipText{
+  display: block;
+}
