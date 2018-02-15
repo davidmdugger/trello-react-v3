@@ -21,6 +21,11 @@ class Card extends Component {
         </p>
         <p>{this.props.card.description}</p>
       </div>
+
+      // <div>
+      //   <p>{this.props.card.title}</p>
+      //   <p>{this.props.card.description}</p>
+      // </div>
     );
   }
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import uuid from 'uuid';
 import CardDisplay from './Components/CardDisplay/CardDisplay';
 import NewCard from './Components/NewCard/NewCard';
-// import CardList from './Components/CardList/CardList';
+import CardList from './Components/CardList/CardList';
 import './App.css';
 
 class App extends Component {
@@ -55,7 +55,7 @@ class App extends Component {
       <div className="App">
         <NewCard addCard={this.handleAddCard.bind(this)} />
         <CardDisplay onDelete={this.handleDeleteCard.bind(this)} cards={this.state.cards} />
-        {/* <CardList cards={this.state.cards} /> */}
+        <CardList cards={this.state.cards} />
       </div>
     );
   }
